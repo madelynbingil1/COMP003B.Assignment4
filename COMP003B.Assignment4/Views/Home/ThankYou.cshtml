@@ -1,0 +1,19 @@
+@model COMP003B.Assignment4.Models.CharityClass
+
+<h1>Thank You!</h1>
+
+@if (Model != null)
+{
+    <div>
+        <p>Welcome to the team, <b>Agent @Model.Name</b> 🕵️, thank you for registering to <b>Ace Gaming Center.</b></p>
+        <p>We will contact you soon at <i>@Model.Email</i> or <i>@Model.PhoneNumber</i> to confirm your registration.</p>
+
+        <p>We will be sure to send you free little gifts to you at:<br/>
+        @Model.Address
+        </p>
+    </div>
+}
+else
+{
+    <div>Model is null</div>
+}
